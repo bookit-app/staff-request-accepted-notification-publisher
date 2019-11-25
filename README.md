@@ -1,4 +1,5 @@
 [![Coverage Status](https://coveralls.io/repos/github/bookit-app/staff-request-accepted-notification-publisher/badge.svg?branch=master)](https://coveralls.io/github/bookit-app/staff-request-accepted-notification-publisher?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aeec318756fa402589b4a2f292c07b79)](https://www.codacy.com/gh/bookit-app/staff-request-accepted-notification-publisher?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bookit-app/staff-request-accepted-notification-publisher&amp;utm_campaign=Badge_Grade)
 
 # staff-request-accepted-notification-publisher
 
