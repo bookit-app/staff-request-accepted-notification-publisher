@@ -1,4 +1,4 @@
-east1steps:
+steps:
   - name: "node:10.16.3"
     entrypoint: npm
     args: ["install"]
