@@ -16,7 +16,7 @@ const context = {
   notSupported: {},
   params: { providerId: '10001', staffMemberUid: 'TEST-STAFF-UID' },
   resource:
-    'projects/sweng-581-capstone/databases/(default)/documents/ServiceProvider/10001/staff/TEST-STAFF-UID',
+    'projects/bookit-app-260021/databases/(default)/documents/ServiceProvider/10001/staff/TEST-STAFF-UID',
   timestamp: '2019-10-25T14:48:48.021215Z'
 };
 
