@@ -42,10 +42,10 @@ function getStatus(fields) {
 
 function generateNotification(params, fields, topic) {
   const notification = {
-    providerId: params.providerId,
+    providerId: fields.providerId.stringValue,
     businessName: fields.businessName.stringValue,
     requestorUid: fields.requestorUid.stringValue,
-    staffMemberUid: params.staffMemberUid,
+    staffMemberUid: fields.staffMemberUid.stringValue,
     requestedStaffMemberEmail: fields.requestedStaffMemberEmail.stringValue
   };
 

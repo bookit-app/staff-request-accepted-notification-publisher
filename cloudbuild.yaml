@@ -28,7 +28,7 @@ steps:
       - staff-request-accepted-notification-publisher
       - --source=.
       - "--trigger-event=providers/cloud.firestore/eventTypes/document.update"
-      - "--trigger-resource=projects/bookit-app-260021/databases/(default)/documents/ServiceProvider/{providerId}/staff/{staffMemberUid}"
+      - "--trigger-resource=projects/bookit-app-260021/databases/(default)/documents/StaffMembershipRequests/{requestId}"
       - --runtime=nodejs10
       - --region=us-east1
       - --env-vars-file=gcloud-env.yaml

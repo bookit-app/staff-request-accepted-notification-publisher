@@ -16,7 +16,7 @@ const context = {
   notSupported: {},
   params: { providerId: '10001', staffMemberUid: 'TEST-STAFF-UID' },
   resource:
-    'projects/bookit-app-260021/databases/(default)/documents/ServiceProvider/10001/staff/TEST-STAFF-UID',
+    'projects/bookit-app-260021/databases/(default)/documents/StaffMembershipRequests/10001',
   timestamp: '2019-10-25T14:48:48.021215Z'
 };
 
@@ -40,6 +40,7 @@ describe('staff-request-accepted-notification-publisher: unit tests', () => {
           providerId: { stringValue: '101' },
           businessName: { stringValue: 'TEST-BUSINESS-NAME' },
           requestorUid: { stringValue: 'TEST-REQUESTOR-UID' },
+          staffMemberUid: {stringValue: 'TEST-STAFF-MEMBER-UID'},
           requestedStaffMemberEmail: { stringValue: 'test@test.com' },
           status: { stringValue: 'ACCEPTED' }
         }
@@ -52,10 +53,10 @@ describe('staff-request-accepted-notification-publisher: unit tests', () => {
     };
 
     const notification = {
-      providerId: '10001',
+      providerId: '101',
       businessName: 'TEST-BUSINESS-NAME',
       requestorUid: 'TEST-REQUESTOR-UID',
-      staffMemberUid: 'TEST-STAFF-UID',
+      staffMemberUid: 'TEST-STAFF-MEMBER-UID',
       requestedStaffMemberEmail: 'test@test.com'
     };
 
@@ -74,8 +75,9 @@ describe('staff-request-accepted-notification-publisher: unit tests', () => {
           providerId: { stringValue: '101' },
           businessName: { stringValue: 'TEST-BUSINESS-NAME' },
           requestorUid: { stringValue: 'TEST-REQUESTOR-UID' },
+          staffMemberUid: {stringValue: 'TEST-STAFF-MEMBER-UID'},
           requestedStaffMemberEmail: { stringValue: 'test@test.com' },
-          status: { stringValue: 'NEW' }
+          status: { stringValue: 'DECLINED' }
         }
       },
       oldValue: {}
